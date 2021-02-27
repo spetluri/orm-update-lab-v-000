@@ -90,7 +90,7 @@ class Student
     
     DB[:conn].execute(sql,name).map do |row|
       
-      "A"
+      p "A"
       
     end
     
