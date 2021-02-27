@@ -88,7 +88,13 @@ class Student
     
     SQL
     
-    puts DB[:conn].execute(sql,name)
+    DB[:conn].execute(sql,name).map do |row|
+      
+      puts row + " A AMMAMAM"
+      
+      self.new_from_db(row)
+      
+    end
     
   end
 
