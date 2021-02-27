@@ -59,7 +59,7 @@ class Student
     
   end
   
-  def self.create
+  def self.createa(:name,:grade)
     
     student = Student.new(name,grade)
     student.save
