@@ -56,7 +56,7 @@ class Student
     
     sql = <<-SQL 
       UPDATE students 
-      SET name = ? and grade = ? 
+      SET name = ?, grade = ? 
       WHERE id = ?;
     SQL
     
